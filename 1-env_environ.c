@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-int main(int argc, char **argv, char **env)
+int main(__attribute__((unused)) int argc,__attribute__((unused))  char **argv, char **env)
 {
 	extern char **environ;
-	printf("%p\n", env);
-	printf("%p\n", environ);
+	printf("%s\n", *env);
+	printf("%s\n", *environ);
 	return (0);
 }
