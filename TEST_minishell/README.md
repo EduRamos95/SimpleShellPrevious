@@ -32,18 +32,14 @@ In other words, simple_shell is a program that reads commands provided, check if
 
 File|Description
 ---|---
-[main.c](./main.c)|entry point for shell
-[shell.c](./shell.c)|executes the shell
-[shell.h](./shell.h)|header
-[builtins.c](./builtins.c)|built-in functions
-[helpers.c](./helpers.c)|helper functions
-[extraneous.c](./extraneous.c)|more helper functions
-[_getenv.c](./_getenv.c)|gets inputted env
-[search_cwd.c](./search_cwd.c)|gets current working dir
-[find_path.c](./find_path.c)|finds PATH
-[bridge.c](./bridge.c)|checks if builtin or not
-[execute.c](./execute.c)|executes builtin or binary
-[man_1_simple_shell](./man_1_simple_shell)|man page
+[simple_ihell.c](./simple_shell.c)|executes the shell
+[main.h](./main.h)|header
+[tokenize_line.c](./tokenize_line.c)|built-in functions
+[get_full_command.c](./get_full_command.c)|helper functions
+[print_env.c](./print_env.c)|gets inputted env
+[3-add_node_end.c](./3-add_node_end.c])|executes builtin or binary
+[4-free_list.c](./4-free_list.c])|executes builtin or binary
+[man_simple_shell](./man_simple_shell)|man page
 
 ## Requirements
 
