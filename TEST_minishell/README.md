@@ -148,6 +148,7 @@ At this time, there are no known bugs.
 
 ## Authors
 Edu Ramos | [GitHub](https://github.com/EduRamos95)
+
 Cesar Evanan | [GitHub](https://github.com/Cesar240998)
 
 ## License
