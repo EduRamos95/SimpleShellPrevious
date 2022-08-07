@@ -32,7 +32,7 @@ char **tokenize_line(char *line)
 	ssize_t read;
 	char **argv;
 
-	printf("ihatec$ ");
+	printf("($) ");
 	read = getline(&line, &len, stdin);
 	if (read == -1)
 		return (NULL);

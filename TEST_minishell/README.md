@@ -79,7 +79,7 @@ simple_shell is designed to run in the `Ubuntu 20.04 LTS` linux environment and 
 
 ## Installation
 
-	 - Clone this repository: `https://github.com/luismch158158/simple_shell.git`
+	 - Clone this repository: `https://github.com/EduRamos95/simple_shell.git`
 	 - Change directories into the repository: `cd simple_shell`
 	 - Compile: `gcc -Wall -Werror -Wextra -pedantic *.c -o hsh`
 	 - Run the shell in interactive mode: `./hsh`
@@ -102,7 +102,7 @@ The simple_shell is designed to execute commands in a similar manner to sh, howe
 - [ ] aliases
 - [ ] variable replacement
 
-### Builtins
+### Built-ins
 
 - [x] exit
 - [x] env
@@ -115,16 +115,16 @@ The simple_shell is designed to execute commands in a similar manner to sh, howe
 ## Example of Use
 Run the executable in your terminal after compiling:
 ```
-#Shell_CL$ ls
+($) ls
 AUTHORS  README.md  _realloc.c  built-ins.c  built-ins_2.c  helper_functions.c
 hsh  	 main.c     main.h  	man_1_simple_shell  	    only_spaces.c
 
-#Shell_CL$ pwd
+($) pwd
 /home/fonsy20/simple_shell
 ```
 
 ```
-#Shell_CL$ ls -la
+($) ls -la
 total 84
 drwxr-xr-x  3 fonsy20 fonsy20  4096 Apr 11 23:53 .
 drwxr-xr-x 17 fonsy20 fonsy20  4096 Apr 11 18:34 ..
@@ -142,7 +142,7 @@ drwxr-xr-x  8 fonsy20 fonsy20  4096 Apr 11 23:54 .git
 -rw-r--r--  1 fonsy20 fonsy20  1714 Apr 10 22:31 man_1_simple_shell
 -rw-r--r--  1 fonsy20 fonsy20   449 Apr 10 22:31 only_spaces.c
 
-#Shell_CL$
+($) 
 ```
 
 ## Authors
