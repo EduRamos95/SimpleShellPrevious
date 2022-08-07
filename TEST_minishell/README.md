@@ -147,9 +147,8 @@ drwxr-xr-x  8 fonsy20 fonsy20  4096 Apr 11 23:54 .git
 At this time, there are no known bugs.
 
 ## Authors
-Christian Varas | [GitHub](https://github.com/ChristianVaras)
-
-Luis Manrique | [GitHub](https://github.com/luismch158158)
+Edu Ramos | [GitHub](https://github.com/EduRamos95)
+Cesar Evanan | [GitHub](https://github.com/Cesar240998)
 
 ## License
 simple_shell is open source and therefore free to download and use without permission.
