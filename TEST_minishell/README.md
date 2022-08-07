@@ -3,13 +3,11 @@
 
 ## Table of Contents
 * [Description](#description)
-* [Flowchart](#flowchart)
 * [File Structure](#file-structure)
 * [Requirements](#requirements)
 * [Installation](#installation)
 * [Usage](#usage)
 * [Example of Use](#example-of-use)
-* [Bugs](#bugs)
 * [Authors](#authors)
 * [License](#license)
 ## Description
@@ -20,9 +18,9 @@ In other words, simple_shell is a program that reads commands provided, check if
 **Interactive mode**
 
     test@ubuntu:~/simple_shell$ ./hsh
-    #Shell_CL$ ls
+    ($) ls
     file1 file2 file3 file4
-    #Shell_CL$
+    ($)
 
 **Non-interactive mode**
 
@@ -31,14 +29,21 @@ In other words, simple_shell is a program that reads commands provided, check if
     test@ubuntu:~/simple_shell$
 
 ## File Structure
-* [main.h](main.h) -Program header file
-* [main.c](main.c) - essential functions to the shell
-* [built-ins.c](built-ins.c) - Major builtin functions
-* [built-ins2.c](built-ins2.c) - Builtin functions that involves 'setenv', 'unsetenv'  builtin command
-* [helper_functions.c](helper_functions.c) - Functions utils
-* [only_spaces.c](only_spaces.c) - Function that validates spaces, tabs or line break
-* [_realloc.c](_realloc.c) - function that reallocates a used memory block
-* [man_1_simple_shell](man_1_simple_shell) -  Shell Man page
+
+File|Description
+---|---
+[main.c](./main.c)|entry point for shell
+[shell.c](./shell.c)|executes the shell
+[shell.h](./shell.h)|header
+[builtins.c](./builtins.c)|built-in functions
+[helpers.c](./helpers.c)|helper functions
+[extraneous.c](./extraneous.c)|more helper functions
+[_getenv.c](./_getenv.c)|gets inputted env
+[search_cwd.c](./search_cwd.c)|gets current working dir
+[find_path.c](./find_path.c)|finds PATH
+[bridge.c](./bridge.c)|checks if builtin or not
+[execute.c](./execute.c)|executes builtin or binary
+[man_1_simple_shell](./man_1_simple_shell)|man page
 
 ## Requirements
 
@@ -143,8 +148,6 @@ drwxr-xr-x  8 fonsy20 fonsy20  4096 Apr 11 23:54 .git
 
 #Shell_CL$
 ```
-## Bugs
-At this time, there are no known bugs.
 
 ## Authors
 Edu Ramos | [GitHub](https://github.com/EduRamos95)
