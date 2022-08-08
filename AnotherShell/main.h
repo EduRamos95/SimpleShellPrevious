@@ -7,6 +7,8 @@
 #include <sys/wait.h>
 #include <sys/types.h>
 #include <sys/stat.h>
+#include <sys/wait.h>
+
 /**
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
@@ -26,4 +28,5 @@ list_t *add_node_end(list_t **head, const char *str);
 char **tokenize_line(char *line);
 void print_env();
 char *get_full_command(char *command);
+int validate_spaces(char *input);
 #endif

@@ -32,35 +32,47 @@ char **tokenize_line(char *line)
 	ssize_t read;
 	char **argv;
 
-	printf("($) ");
-	read = getline(&line, &len, stdin);
-	if (read == -1)
-		return (NULL);
-
-	n = get_num_words(line);
-
-	argv = malloc((n + 1) * sizeof(char *));
-	token = strtok(line, " ");
-	i = 0;
-	if (n > 1)
+	while (read != EOF)
 	{
-		i = 0;
-		while (token != NULL)
+		printf("($) ");
+		read = getline(&line, &len, stdin);
+		if (read == -1)
 		{
-			argv[i] = token;
-			token = strtok(NULL, " ");
-			i++;
+			free(line);
+			break;
 		}
-		argv[i - 1][strlen(argv[i - 1]) - 1] = '\0';
-		argv[i] = NULL;
+		if (validate_spaces(line))
+		{
+			free(line);
+			continue;
+		}
+
+		n = get_num_words(line);
+
+		argv = malloc((n + 1) * sizeof(char *));
+		token = strtok(line, " ");
+		i = 0;
+		if (n > 1)
+		{
+			i = 0;
+			while (token != NULL)
+			{
+				argv[i] = token;
+				token = strtok(NULL, " ");
+				i++;
+			}
+			argv[i - 1][strlen(argv[i - 1]) - 1] = '\0';
+			argv[i] = NULL;
+		}
+		else
+		{
+			argv[0] = token;
+			argv[0][strlen(argv[0]) - 1] = '\0';
+			argv[1] = NULL;
+		}
+		return (argv);
+		free(argv);
+		free(token);
 	}
-	else
-	{
-		argv[0] = token;
-		argv[0][strlen(argv[0]) - 1] = '\0';
-		argv[1] = NULL;
-	}
-	return (argv);
-	free(argv);
-	free(token);
+	return(0);
 }
