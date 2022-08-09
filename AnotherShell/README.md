@@ -32,14 +32,15 @@ In other words, simple_shell is a program that reads commands provided, check if
 
 File|Description
 ---|---
-[simple_ihell.c](./simple_shell.c)|executes the shell
+[simple_shell.c](./simple_shell.c)|executes the shell
 [main.h](./main.h)|header
 [tokenize_line.c](./tokenize_line.c)|built-in functions
-[get_full_command.c](./get_full_command.c)|helper functions
+[getting_command.c](./getting_command.c)|helper functions
 [print_env.c](./print_env.c)|gets inputted env
 [3-add_node_end.c](./3-add_node_end.c])|executes builtin or binary
 [4-free_list.c](./4-free_list.c])|executes builtin or binary
 [man_simple_shell](./man_simple_shell)|man page
+[spaces.c](./spaces.c)|header
 
 ## Requirements
 
@@ -98,7 +99,7 @@ The simple_shell is designed to execute commands in a similar manner to sh, howe
 - [ ] handles comments (#)
 - [x] handles **;**
 - [x] custom getline type function
-- [x] handles **&&** and **||**
+- [ ] handles **&&** and **||**
 - [ ] aliases
 - [ ] variable replacement
 
@@ -106,9 +107,9 @@ The simple_shell is designed to execute commands in a similar manner to sh, howe
 
 - [x] exit
 - [x] env
-- [x] setenv
-- [x] unsetenv
-- [x] cd
+- [ ] setenv
+- [ ] unsetenv
+- [ ] cd
 - [ ] help
 - [ ] history
 
