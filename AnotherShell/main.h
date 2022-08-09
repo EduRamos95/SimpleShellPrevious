@@ -9,6 +9,8 @@
 #include <sys/stat.h>
 #include <sys/wait.h>
 
+#define UNUSED(x) (void)(x)
+
 /**
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)

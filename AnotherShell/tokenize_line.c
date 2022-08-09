@@ -36,6 +36,7 @@ char **tokenize_line(char *line)
 	{
 		printf("($) ");
 		read = getline(&line, &len, stdin);
+		
 		if (read == -1)
 		{
 			break;

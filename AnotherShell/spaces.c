@@ -23,3 +23,26 @@ int validate_spaces(char *input)
 		flag = 0;
 	return (flag);
 }
+
+/**
+ * first_validations - Validations after the getline (all spaces or errors).
+ *
+ * @command: Command (input) of the getline.
+ *
+ * @bytes_read: Lenght of the command.
+ *
+ * @while_st: Pointer to the while status.
+ *
+ * Return: 0 if all good, 1 otherwise.
+ */
+
+int first_validations(char *command, int bytes_read)
+{
+	if (bytes_read == EOF)
+	{
+		free(command);
+		return (-1);
+	}
+
+	return (0);
+}
