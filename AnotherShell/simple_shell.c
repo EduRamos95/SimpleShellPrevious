@@ -1,4 +1,21 @@
 #include "main.h"
+
+unsigned int sig_flag;
+/**
+ * sig_handler - handles ^C signal interupt
+ * @uuv: unused variable (required for signal function prototype)
+ *
+ * Return: void
+ */
+static void sig_handler(int uuv)
+{
+    (void) uuv;
+    if (sig_flag == 0)
+        puts("\n($) ");
+    else
+        puts("\n($) ");
+}
+
 /**
  * main - runs a shell
  * @argc: number of arguments
@@ -11,10 +28,14 @@ int main(__attribute__((unused)) int argc, char *argv[])
 	char *line = NULL, **args;
 	int success, status;
 	pid_t parent;
-
+	sig_flag = 0;
+	
+	signal(SIGINT, sig_handler);
 	while (1)
 	{
+		sig_flag = 1;
 		args = tokenize_line(line);
+		
 		if (!strncmp(args[0], "exit", 4))
 			return (0);
 		if (args[0][0] != '/' || args[0][0] == '.')

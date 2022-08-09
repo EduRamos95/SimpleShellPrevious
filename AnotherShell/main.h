@@ -29,4 +29,5 @@ char **tokenize_line(char *line);
 void print_env();
 char *get_full_command(char *command);
 int validate_spaces(char *input);
+
 #endif

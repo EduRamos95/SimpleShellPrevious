@@ -29,7 +29,7 @@ char **tokenize_line(char *line)
 {
 	char *token;
 	size_t len = 0, i, n;
-	ssize_t read;
+	ssize_t read = 0;
 	char **argv;
 
 	while (read != EOF)
@@ -38,12 +38,10 @@ char **tokenize_line(char *line)
 		read = getline(&line, &len, stdin);
 		if (read == -1)
 		{
-			free(line);
 			break;
 		}
 		if (validate_spaces(line))
 		{
-			free(line);
 			continue;
 		}
 
@@ -73,6 +71,7 @@ char **tokenize_line(char *line)
 		return (argv);
 		free(argv);
 		free(token);
+		free(line);
 	}
 	return(0);
 }
