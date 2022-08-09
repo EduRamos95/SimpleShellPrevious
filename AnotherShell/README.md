@@ -32,13 +32,13 @@ In other words, simple_shell is a program that reads commands provided, check if
 
 File|Description
 ---|---
-[simple_shell.c](./simple_shell.c)|executes the shell
+[simple_shell.c](./simple_shell.c)|execute the shell
 [main.h](./main.h)|header
 [tokenize_line.c](./tokenize_line.c)|tokenize input
 [getting_command.c](./getting_command.c)|get path of command
 [print_env.c](./print_env.c)|print environment
-[3-add_node_end.c](./3-add_node_end.c])|adds node at the end of list
-[4-free_list.c](./4-free_list.c])|frees a list
+[3-add_node_end.c](./3-add_node_end.c])|add node at the end of list
+[4-free_list.c](./4-free_list.c])|free a list
 [man_simple_shell](./man_simple_shell)|man page
 [spaces.c](./spaces.c)|validate spaces
 
