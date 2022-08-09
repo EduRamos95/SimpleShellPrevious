@@ -34,13 +34,13 @@ File|Description
 ---|---
 [simple_shell.c](./simple_shell.c)|executes the shell
 [main.h](./main.h)|header
-[tokenize_line.c](./tokenize_line.c)|built-in functions
-[getting_command.c](./getting_command.c)|helper functions
-[print_env.c](./print_env.c)|gets inputted env
-[3-add_node_end.c](./3-add_node_end.c])|executes builtin or binary
-[4-free_list.c](./4-free_list.c])|executes builtin or binary
+[tokenize_line.c](./tokenize_line.c)|tokenize input
+[getting_command.c](./getting_command.c)|get path of command
+[print_env.c](./print_env.c)|print environment
+[3-add_node_end.c](./3-add_node_end.c])|adds node at the end of list
+[4-free_list.c](./4-free_list.c])|frees a list
 [man_simple_shell](./man_simple_shell)|man page
-[spaces.c](./spaces.c)|header
+[spaces.c](./spaces.c)|validate spaces
 
 ## Requirements
 
